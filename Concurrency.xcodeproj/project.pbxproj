@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		06E2F05729D1978F00B98C3B /* ConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F05629D1978F00B98C3B /* ConcurrencyApp.swift */; };
-		06E2F05929D1978F00B98C3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F05829D1978F00B98C3B /* ContentView.swift */; };
+		06E2F05929D1978F00B98C3B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F05829D1978F00B98C3B /* DetailsView.swift */; };
 		06E2F05B29D1979000B98C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2F05A29D1979000B98C3B /* Assets.xcassets */; };
 		06E2F05E29D1979000B98C3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2F05D29D1979000B98C3B /* Preview Assets.xcassets */; };
+		06E2F06529D197D900B98C3B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F06429D197D900B98C3B /* UserService.swift */; };
+		06E2F06729D198D300B98C3B /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F06629D198D300B98C3B /* ProductService.swift */; };
+		06E2F06929D19F8300B98C3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F06829D19F8300B98C3B /* MainView.swift */; };
+		06E2F06B29D1A7C100B98C3B /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F06A29D1A7C100B98C3B /* ProductsView.swift */; };
+		06E2F06D29D1B30A00B98C3B /* PositionObservingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E2F06C29D1B30A00B98C3B /* PositionObservingView.swift */; };
+		06E2F07029D1FB4E00B98C3B /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 06E2F06F29D1FB4E00B98C3B /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		06E2F05329D1978F00B98C3B /* Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2F05629D1978F00B98C3B /* ConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyApp.swift; sourceTree = "<group>"; };
-		06E2F05829D1978F00B98C3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06E2F05829D1978F00B98C3B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		06E2F05A29D1979000B98C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06E2F05D29D1979000B98C3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06E2F06429D197D900B98C3B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		06E2F06629D198D300B98C3B /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		06E2F06829D19F8300B98C3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		06E2F06A29D1A7C100B98C3B /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		06E2F06C29D1B30A00B98C3B /* PositionObservingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionObservingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E2F07029D1FB4E00B98C3B /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +64,14 @@
 			isa = PBXGroup;
 			children = (
 				06E2F05629D1978F00B98C3B /* ConcurrencyApp.swift */,
-				06E2F05829D1978F00B98C3B /* ContentView.swift */,
+				06E2F06829D19F8300B98C3B /* MainView.swift */,
+				06E2F05829D1978F00B98C3B /* DetailsView.swift */,
+				06E2F06A29D1A7C100B98C3B /* ProductsView.swift */,
 				06E2F05A29D1979000B98C3B /* Assets.xcassets */,
 				06E2F05C29D1979000B98C3B /* Preview Content */,
+				06E2F06429D197D900B98C3B /* UserService.swift */,
+				06E2F06629D198D300B98C3B /* ProductService.swift */,
+				06E2F06C29D1B30A00B98C3B /* PositionObservingView.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = Concurrency;
+			packageProductDependencies = (
+				06E2F06F29D1FB4E00B98C3B /* Introspect */,
+			);
 			productName = Concurrency;
 			productReference = 06E2F05329D1978F00B98C3B /* Concurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 06E2F04A29D1978F00B98C3B;
+			packageReferences = (
+				06E2F06E29D1FB4E00B98C3B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 06E2F05429D1978F00B98C3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06E2F05929D1978F00B98C3B /* ContentView.swift in Sources */,
+				06E2F06D29D1B30A00B98C3B /* PositionObservingView.swift in Sources */,
+				06E2F05929D1978F00B98C3B /* DetailsView.swift in Sources */,
+				06E2F06729D198D300B98C3B /* ProductService.swift in Sources */,
+				06E2F06B29D1A7C100B98C3B /* ProductsView.swift in Sources */,
 				06E2F05729D1978F00B98C3B /* ConcurrencyApp.swift in Sources */,
+				06E2F06929D19F8300B98C3B /* MainView.swift in Sources */,
+				06E2F06529D197D900B98C3B /* UserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06E2F06E29D1FB4E00B98C3B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06E2F06F29D1FB4E00B98C3B /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06E2F06E29D1FB4E00B98C3B /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06E2F04B29D1978F00B98C3B /* Project object */;
 }
